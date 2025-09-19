@@ -1,0 +1,7 @@
+<odoo>
+  <templates id="template" xml:space="preserve">
+    <t t-name="crm_lead_geolocation.GeoMap" owl="1">
+      <div style="width:100%; height:300px; border:1px solid #ccc;"></div>
+    </t>
+  </templates>
+</odoo>

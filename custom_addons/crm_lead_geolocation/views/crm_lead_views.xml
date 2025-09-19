@@ -1,0 +1,15 @@
+<odoo>
+    <record id="view_crm_lead_form_inherit_geo" model="ir.ui.view">
+        <field name="name">crm.lead.view.form.inherit</field>
+        <field name="model">crm.lead</field>
+        <field name="inherit_id" ref="crm.crm_lead_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//sheet/notebook/page[@name='extra']" position="inside">
+                <group string="Geolocation">
+                    <field name="latitude"/>
+                    <field name="longitude"/>
+                </group>
+            </xpath>
+        </field>
+    </record>
+</odoo>

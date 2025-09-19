@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_crm_lead_form_hide_probability" model="ir.ui.view">
+        <field name="name">crm.lead.form.hide.probability</field>
+        <field name="model">crm.lead</field>
+        <field name="inherit_id" ref="crm.crm_lead_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='probability']/parent::div" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+        </field>
+    </record>
+   <!-- <data>
+        <record id="crm_lead_view_form_custom_company_name" model="ir.ui.view">
+            <field name="name">crm.lead.form.custom.company_name</field>
+            <field name="model">crm.lead</field>
+            <field name="inherit_id" ref="crm.crm_lead_view_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='parner_name']" position="replace">
+                    <field name="parner_name" string = "Company Name" placeholder="Company Name" class="o_form_inline"/>
+                </xpath>
+                <xpath expr="//field[@name='parner_id']" position="attributes">
+                    <attribute name="string">Existing Customer(Optional)</attribute>
+                    <attribute name="domain">[('customer', '=', True)]</attribute>
+                </xpath
+            </field>
+        </record>
+    </data>-->
+</odoo>

@@ -1,0 +1,7 @@
+log/odoo.log
+.vscode
+.tx
+filestore
+venv
+odoo.conf
+odoo_17.code-workspace

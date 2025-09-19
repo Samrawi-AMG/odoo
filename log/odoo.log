@@ -2074,3 +2074,432 @@ DETAIL:  Key (name)=(jsdjADJK) already exists.
 2025-09-18 17:29:06,344 3228 INFO odoo2 werkzeug: 127.0.0.1 - - [18/Sep/2025 17:29:06] "POST /web/dataset/call_kw/crm.lead/onchange HTTP/1.1" 200 - 39 0.016 0.065
 2025-09-18 17:29:06,700 3228 WARNING odoo2 odoo.http: Invalid Phone Number format for '+25195249373'. Please use a valid Ethiopian format (e.g., 09... or 07...). 
 2025-09-18 17:29:06,700 3228 INFO odoo2 werkzeug: 127.0.0.1 - - [18/Sep/2025 17:29:06] "POST /web/dataset/call_kw/crm.lead/web_save HTTP/1.1" 200 - 16 0.010 0.031
+2025-09-19 09:14:32,805 6768 INFO ? odoo: Odoo version 17.0 
+2025-09-19 09:14:32,806 6768 INFO ? odoo: Using configuration file at E:\odoo_17\odoo.conf 
+2025-09-19 09:14:32,806 6768 INFO ? odoo: addons paths: ['E:\\odoo_17\\odoo\\addons', 'c:\\users\\amg\\appdata\\local\\openerp s.a\\odoo\\addons\\17.0', 'e:\\odoo_17\\addons', 'e:\\odoo_17\\custom_addons', 'e:\\odoo_17\\custom_addons\\amg_crm', 'e:\\odoo_17\\custom_addons\\partner-contact', 'e:\\odoo_17\\custom_addons\\account-invoicing', 'e:\\odoo_17\\custom_addons\\automation', 'e:\\odoo_17\\custom_addons\\geospatial', 'e:\\odoo_17\\custom_addons\\management-system', 'e:\\odoo_17\\custom_addons\\manufacture', 'e:\\odoo_17\\custom_addons\\purchase-workflow', 'e:\\odoo_17\\custom_addons\\sale-workflow', 'e:\\odoo_17\\custom_addons\\server-auth', 'e:\\odoo_17\\custom_addons\\server-tools', 'e:\\odoo_17\\custom_addons\\stock_barcode_scanner', 'e:\\odoo_17\\custom_addons\\stock-logistics-warehouse', 'e:\\odoo_17\\custom_addons\\stock-logistics-workflow', 'e:\\odoo_17\\custom_addons\\amg_crm\\market_intelligence', 'e:\\odoo_17\\odoo\\addons'] 
+2025-09-19 09:14:32,806 6768 INFO ? odoo: database: odoo2@default:default 
+2025-09-19 09:14:32,989 6768 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at C:\Program Files\wkhtmltopdf\bin\wkhtmltopdf.exe 
+2025-09-19 09:14:34,662 6768 INFO ? odoo.service.server: HTTP service (werkzeug) running on SamrawiH-ICT.AMG.com:8069 
+2025-09-19 09:14:40,928 6768 INFO ? odoo.modules.loading: loading 1 modules... 
+2025-09-19 09:14:40,953 6768 INFO ? odoo.modules.loading: 1 modules loaded in 0.02s, 0 queries (+0 extra) 
+2025-09-19 09:14:41,291 6768 WARNING ? py.warnings: <unknown>:45: DeprecationWarning: invalid escape sequence '\s'
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\threading.py", line 973, in _bootstrap
+    self._bootstrap_inner()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\threading.py", line 953, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "E:\odoo_17\odoo\service\server.py", line 127, in __init__
+    super().__init__(*args, **kwargs)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\socketserver.py", line 747, in __init__
+    self.handle()
+  File "E:\odoo_17\venv\lib\site-packages\werkzeug\serving.py", line 342, in handle
+    BaseHTTPRequestHandler.handle(self)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\http\server.py", line 433, in handle
+    self.handle_one_request()
+  File "E:\odoo_17\venv\lib\site-packages\werkzeug\serving.py", line 374, in handle_one_request
+    self.run_wsgi()
+  File "E:\odoo_17\venv\lib\site-packages\werkzeug\serving.py", line 319, in run_wsgi
+    execute(self.server.app)
+  File "E:\odoo_17\venv\lib\site-packages\werkzeug\serving.py", line 308, in execute
+    application_iter = app(environ, start_response)
+  File "E:\odoo_17\odoo\http.py", line 2375, in __call__
+    response = request._serve_db()
+  File "E:\odoo_17\odoo\http.py", line 1928, in _serve_db
+    self.registry = Registry(self.db).check_signaling()
+  File "E:\odoo_17\odoo\modules\registry.py", line 89, in __new__
+    return cls.new(db_name)
+  File "<decorator-gen-16>", line 2, in new
+  File "E:\odoo_17\odoo\tools\func.py", line 87, in locked
+    return func(inst, *args, **kwargs)
+  File "E:\odoo_17\odoo\modules\registry.py", line 110, in new
+    odoo.modules.load_modules(registry, force_demo, status, update_module)
+  File "E:\odoo_17\odoo\modules\loading.py", line 481, in load_modules
+    processed_modules += load_marked_modules(env, graph,
+  File "E:\odoo_17\odoo\modules\loading.py", line 364, in load_marked_modules
+    graph.add_modules(env.cr, module_list, force)
+  File "E:\odoo_17\odoo\modules\graph.py", line 71, in add_modules
+    info = odoo.modules.module.get_manifest(module)
+  File "E:\odoo_17\odoo\modules\module.py", line 369, in get_manifest
+    return copy.deepcopy(_get_manifest_cached(module, mod_path))
+  File "E:\odoo_17\odoo\modules\module.py", line 373, in _get_manifest_cached
+    return load_manifest(module, mod_path)
+  File "E:\odoo_17\odoo\modules\module.py", line 319, in load_manifest
+    manifest.update(ast.literal_eval(f.read()))
+  File "E:\odoo_17\odoo\tools\_monkeypatches.py", line 88, in literal_eval
+    return orig_literal_eval(expr)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\ast.py", line 64, in literal_eval
+    node_or_string = parse(node_or_string.lstrip(" \t"), mode='eval')
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\ast.py", line 50, in parse
+    return compile(source, filename, mode, flags,
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\warnings.py", line 109, in _showwarnmsg
+    sw(msg.message, msg.category, msg.filename, msg.lineno,
+  File "E:\odoo_17\odoo\netsvc.py", line 321, in showwarning_with_traceback
+    for frame in traceback.extract_stack():
+ 
+2025-09-19 09:14:42,524 6768 WARNING ? odoo.modules.module: Missing `license` key in manifest for 'crm_lead_geolocation', defaulting to LGPL-3 
+2025-09-19 09:14:43,578 6768 INFO ? odoo.modules.loading: loading 177 modules... 
+2025-09-19 09:14:48,538 6768 INFO ? odoo.modules.loading: Loading module crm (70/177) 
+2025-09-19 09:14:49,662 6768 INFO ? odoo.modules.registry: module crm: creating or updating database tables 
+2025-09-19 09:14:50,589 6768 INFO ? odoo.schema: Keep unexpected index res_users__create_date_index on table res_users 
+2025-09-19 09:14:50,644 6768 INFO ? odoo.modules.loading: loading crm/security/crm_security.xml 
+2025-09-19 09:14:50,757 6768 INFO ? odoo.modules.loading: loading crm/security/ir.model.access.csv 
+2025-09-19 09:14:50,917 6768 INFO ? odoo.modules.loading: loading crm/data/crm_lead_merge_template.xml 
+2025-09-19 09:14:51,005 6768 INFO ? odoo.modules.loading: loading crm/data/crm_lead_prediction_data.xml 
+2025-09-19 09:14:51,089 6768 INFO ? odoo.modules.loading: loading crm/data/crm_lost_reason_data.xml 
+2025-09-19 09:14:51,104 6768 INFO ? odoo.modules.loading: loading crm/data/crm_stage_data.xml 
+2025-09-19 09:14:51,119 6768 INFO ? odoo.modules.loading: loading crm/data/crm_team_data.xml 
+2025-09-19 09:14:51,146 6768 INFO ? odoo.modules.loading: loading crm/data/digest_data.xml 
+2025-09-19 09:14:51,207 6768 INFO ? odoo.modules.loading: loading crm/data/ir_action_data.xml 
+2025-09-19 09:14:51,247 6768 INFO ? odoo.modules.loading: loading crm/data/ir_cron_data.xml 
+2025-09-19 09:14:51,255 6768 INFO ? odoo.modules.loading: loading crm/data/mail_message_subtype_data.xml 
+2025-09-19 09:14:51,291 6768 INFO ? odoo.modules.loading: loading crm/data/crm_recurring_plan_data.xml 
+2025-09-19 09:14:51,303 6768 INFO ? odoo.modules.loading: loading crm/wizard/crm_lead_lost_views.xml 
+2025-09-19 09:14:51,352 6768 INFO ? odoo.modules.loading: loading crm/wizard/crm_lead_to_opportunity_views.xml 
+2025-09-19 09:14:51,391 6768 INFO ? odoo.modules.loading: loading crm/wizard/crm_lead_to_opportunity_mass_views.xml 
+2025-09-19 09:14:51,423 6768 INFO ? odoo.modules.loading: loading crm/wizard/crm_merge_opportunities_views.xml 
+2025-09-19 09:14:51,463 6768 INFO ? odoo.modules.loading: loading crm/wizard/crm_lead_pls_update_views.xml 
+2025-09-19 09:14:51,492 6768 INFO ? odoo.modules.loading: loading crm/views/calendar_views.xml 
+2025-09-19 09:14:51,536 6768 INFO ? odoo.modules.loading: loading crm/views/crm_recurring_plan_views.xml 
+2025-09-19 09:14:51,602 6768 INFO ? odoo.modules.loading: loading crm/views/crm_lost_reason_views.xml 
+2025-09-19 09:14:51,665 6768 INFO ? odoo.modules.loading: loading crm/views/crm_stage_views.xml 
+2025-09-19 09:14:51,738 6768 INFO ? odoo.modules.loading: loading crm/views/crm_lead_views.xml 
+2025-09-19 09:14:52,523 6768 INFO ? odoo.modules.loading: loading crm/views/crm_team_member_views.xml 
+2025-09-19 09:14:52,629 6768 INFO ? odoo.modules.loading: loading crm/views/digest_views.xml 
+2025-09-19 09:14:52,681 6768 INFO ? odoo.modules.loading: loading crm/views/mail_activity_plan_views.xml 
+2025-09-19 09:14:52,706 6768 INFO ? odoo.modules.loading: loading crm/views/mail_activity_views.xml 
+2025-09-19 09:14:52,714 6768 INFO ? odoo.modules.loading: loading crm/views/res_config_settings_views.xml 
+2025-09-19 09:14:52,915 6768 INFO ? odoo.modules.loading: loading crm/views/res_partner_views.xml 
+2025-09-19 09:14:53,131 6768 INFO ? odoo.modules.loading: loading crm/views/utm_campaign_views.xml 
+2025-09-19 09:14:53,211 6768 INFO ? odoo.modules.loading: loading crm/report/crm_activity_report_views.xml 
+2025-09-19 09:14:53,316 6768 INFO ? odoo.modules.loading: loading crm/report/crm_opportunity_report_views.xml 
+2025-09-19 09:14:53,664 6768 INFO ? odoo.models.unlink: User #1 deleted ir.actions.act_window.view records with IDs: [1184, 1185, 1186] 
+2025-09-19 09:14:53,711 6768 INFO ? odoo.models.unlink: User #1 deleted ir.actions.act_window.view records with IDs: [1187, 1188, 1189, 1190] 
+2025-09-19 09:14:53,711 6768 INFO ? odoo.modules.loading: loading crm/views/crm_team_views.xml 
+2025-09-19 09:14:53,752 6768 INFO ? odoo.models.unlink: User #1 deleted ir.actions.act_window.view records with IDs: [1191, 1192] 
+2025-09-19 09:14:53,944 6768 INFO ? odoo.modules.loading: loading crm/views/crm_menu_views.xml 
+2025-09-19 09:14:54,305 6768 INFO ? odoo.modules.loading: loading crm/views/crm_helper_templates.xml 
+2025-09-19 09:14:54,482 6768 INFO ? odoo.modules.loading: Module crm loaded in 5.94s, 1791 queries (+1791 other) 
+2025-09-19 09:14:55,657 6768 INFO ? odoo.modules.loading: Loading module crm_claim (84/177) 
+2025-09-19 09:14:56,941 6768 INFO ? odoo.modules.registry: module crm_claim: creating or updating database tables 
+2025-09-19 09:14:57,247 6768 INFO ? odoo.schema: Keep unexpected index res_users__create_date_index on table res_users 
+2025-09-19 09:14:57,247 6768 INFO ? odoo.modules.loading: loading crm_claim/security/ir.model.access.csv 
+2025-09-19 09:14:57,295 6768 INFO ? odoo.modules.loading: loading crm_claim/security/crm_claim_security.xml 
+2025-09-19 09:14:57,336 6768 INFO ? odoo.modules.loading: loading crm_claim/data/crm_claim_data.xml 
+2025-09-19 09:14:57,368 6768 INFO ? odoo.modules.loading: loading crm_claim/views/crm_claim_views.xml 
+2025-09-19 09:14:57,537 6768 INFO ? odoo.modules.loading: loading crm_claim/views/crm_claim_category_views.xml 
+2025-09-19 09:14:57,625 6768 INFO ? odoo.modules.loading: loading crm_claim/views/crm_claim_stage_views.xml 
+2025-09-19 09:14:57,697 6768 INFO ? odoo.modules.loading: loading crm_claim/views/res_partner_views.xml 
+2025-09-19 09:14:57,866 6768 INFO ? odoo.modules.loading: loading crm_claim/views/crm_claim_menu.xml 
+2025-09-19 09:14:57,904 6768 INFO ? odoo.modules.loading: loading crm_claim/report/crm_claim_report_view.xml 
+2025-09-19 09:14:58,147 6768 INFO ? odoo.modules.loading: Module crm_claim loaded in 2.49s, 429 queries (+429 other) 
+2025-09-19 09:14:58,147 6768 INFO ? odoo.modules.loading: Loading module crm_industry (85/177) 
+2025-09-19 09:14:59,055 6768 INFO ? odoo.modules.registry: module crm_industry: creating or updating database tables 
+2025-09-19 09:14:59,159 6768 INFO ? odoo.modules.loading: loading crm_industry/views/crm_lead_view.xml 
+2025-09-19 09:14:59,740 6768 INFO ? odoo.modules.loading: Module crm_industry loaded in 1.59s, 151 queries (+151 other) 
+2025-09-19 09:14:59,740 6768 INFO ? odoo.modules.loading: Loading module crm_lead_code (86/177) 
+2025-09-19 09:15:00,628 6768 INFO ? odoo.modules.registry: module crm_lead_code: creating or updating database tables 
+2025-09-19 09:15:00,756 6768 INFO ? odoo.modules.loading: loading crm_lead_code/data/lead_sequence.xml 
+2025-09-19 09:15:00,771 6768 INFO ? odoo.modules.loading: loading crm_lead_code/views/crm_lead_view.xml 
+2025-09-19 09:15:01,253 6768 INFO ? odoo.modules.loading: Module crm_lead_code loaded in 1.51s, 176 queries (+176 other) 
+2025-09-19 09:15:01,253 6768 INFO ? odoo.modules.loading: Loading module crm_lead_geolocation (87/177) 
+2025-09-19 09:15:02,177 6768 INFO ? odoo.modules.registry: module crm_lead_geolocation: creating or updating database tables 
+2025-09-19 09:15:02,258 6768 INFO ? odoo.modules.loading: loading crm_lead_geolocation/views/crm_lead_views.xml 
+2025-09-19 09:15:02,766 6768 INFO ? odoo.modules.loading: Module crm_lead_geolocation loaded in 1.51s, 93 queries (+93 other) 
+2025-09-19 09:15:02,766 6768 INFO ? odoo.modules.loading: Loading module crm_lead_product (88/177) 
+2025-09-19 09:15:03,642 6768 INFO ? odoo.modules.registry: module crm_lead_product: creating or updating database tables 
+2025-09-19 09:15:03,770 6768 INFO ? odoo.modules.loading: loading crm_lead_product/security/ir.model.access.csv 
+2025-09-19 09:15:03,882 6768 INFO ? odoo.modules.loading: loading crm_lead_product/views/crm_lead_views.xml 
+2025-09-19 09:15:03,974 6768 INFO ? odoo.modules.loading: loading crm_lead_product/views/crm_lead_line_views.xml 
+2025-09-19 09:15:04,005 6768 INFO ? odoo.modules.loading: loading crm_lead_product/report/crm_product_report_views.xml 
+2025-09-19 09:15:04,150 6768 INFO ? odoo.models.unlink: User #1 deleted ir.actions.act_window.view records with IDs: [1193, 1194, 1195] 
+2025-09-19 09:15:04,287 6768 INFO ? odoo.modules.loading: Module crm_lead_product loaded in 1.52s, 190 queries (+190 other) 
+2025-09-19 09:15:04,336 6768 INFO ? odoo.modules.loading: Loading module crm_location (91/177) 
+2025-09-19 09:15:05,362 6768 INFO ? odoo.modules.registry: module crm_location: creating or updating database tables 
+2025-09-19 09:15:05,457 6768 INFO ? odoo.modules.loading: loading crm_location/views/crm_lead_view.xml 
+2025-09-19 09:15:05,947 6768 INFO ? odoo.modules.loading: Module crm_location loaded in 1.61s, 95 queries (+95 other) 
+2025-09-19 09:15:05,947 6768 INFO ? odoo.modules.loading: Loading module crm_mail_plugin (92/177) 
+2025-09-19 09:15:06,896 6768 INFO ? odoo.modules.registry: module crm_mail_plugin: creating or updating database tables 
+2025-09-19 09:15:06,976 6768 INFO ? odoo.modules.loading: loading crm_mail_plugin/views/crm_mail_plugin_lead.xml 
+2025-09-19 09:15:07,073 6768 INFO ? odoo.modules.loading: loading crm_mail_plugin/views/crm_lead_views.xml 
+2025-09-19 09:15:07,178 6768 INFO ? odoo.modules.loading: Module crm_mail_plugin loaded in 1.23s, 79 queries (+79 other) 
+2025-09-19 09:15:07,178 6768 INFO ? odoo.modules.loading: Loading module crm_module (93/177) 
+2025-09-19 09:15:08,064 6768 INFO ? odoo.modules.loading: loading crm_module/views/crm_category.xml 
+2025-09-19 09:15:08,527 6768 INFO ? odoo.modules.loading: Module crm_module loaded in 1.35s, 37 queries (+37 other) 
+2025-09-19 09:15:08,527 6768 INFO ? odoo.modules.loading: Loading module crm_phonecall (94/177) 
+2025-09-19 09:15:09,453 6768 INFO ? odoo.modules.registry: module crm_phonecall: creating or updating database tables 
+2025-09-19 09:15:09,815 6768 INFO ? odoo.schema: Keep unexpected index res_users__create_date_index on table res_users 
+2025-09-19 09:15:09,847 6768 INFO ? odoo.modules.loading: loading crm_phonecall/security/crm_security.xml 
+2025-09-19 09:15:09,880 6768 INFO ? odoo.modules.loading: loading crm_phonecall/security/ir.model.access.csv 
+2025-09-19 09:15:09,928 6768 INFO ? odoo.modules.loading: loading crm_phonecall/wizard/crm_phonecall_to_phonecall_view.xml 
+2025-09-19 09:15:09,975 6768 INFO ? odoo.modules.loading: loading crm_phonecall/views/crm_phonecall_view.xml 
+2025-09-19 09:15:10,259 6768 INFO ? odoo.modules.loading: loading crm_phonecall/views/res_partner_view.xml 
+2025-09-19 09:15:10,405 6768 WARNING ? odoo.addons.base.models.ir_ui_view: Using active_id, active_ids and active_model in expressions is deprecated, found active_id 
+2025-09-19 09:15:10,405 6768 INFO ? odoo.modules.loading: loading crm_phonecall/views/crm_lead_view.xml 
+2025-09-19 09:15:10,500 6768 INFO ? odoo.modules.loading: loading crm_phonecall/views/res_config_settings_views.xml 
+2025-09-19 09:15:10,709 6768 INFO ? odoo.modules.loading: loading crm_phonecall/report/crm_phonecall_report_view.xml 
+2025-09-19 09:15:10,970 6768 INFO ? odoo.modules.loading: Module crm_phonecall loaded in 2.44s, 563 queries (+563 other) 
+2025-09-19 09:15:10,970 6768 INFO ? odoo.modules.loading: Loading module crm_probability_cleaner (95/177) 
+2025-09-19 09:15:12,172 6768 INFO ? odoo.modules.loading: loading crm_probability_cleaner/views/crm_lead_views.xml 
+2025-09-19 09:15:12,435 6768 INFO ? odoo.modules.loading: Module crm_probability_cleaner loaded in 1.46s, 45 queries (+45 other) 
+2025-09-19 09:15:12,435 6768 INFO ? odoo.modules.loading: Loading module crm_sms (96/177) 
+2025-09-19 09:15:13,242 6768 INFO ? odoo.modules.loading: loading crm_sms/views/crm_lead_views.xml 
+2025-09-19 09:15:13,377 6768 INFO ? odoo.modules.loading: loading crm_sms/security/ir.model.access.csv 
+2025-09-19 09:15:13,395 6768 INFO ? odoo.modules.loading: loading crm_sms/security/sms_security.xml 
+2025-09-19 09:15:13,441 6768 INFO ? odoo.modules.loading: Module crm_sms loaded in 1.01s, 86 queries (+86 other) 
+2025-09-19 09:15:13,441 6768 INFO ? odoo.modules.loading: Loading module custom_crm (97/177) 
+2025-09-19 09:15:14,254 6768 INFO ? odoo.modules.registry: module custom_crm: creating or updating database tables 
+2025-09-19 09:15:14,349 6768 INFO ? odoo.modules.loading: loading custom_crm/views/crm_lead_views.xml 
+2025-09-19 09:15:14,555 6768 INFO ? odoo.modules.loading: Module custom_crm loaded in 1.11s, 95 queries (+95 other) 
+2025-09-19 09:15:14,555 6768 INFO ? odoo.modules.loading: Loading module event_crm (98/177) 
+2025-09-19 09:15:15,330 6768 INFO ? odoo.modules.registry: module event_crm: creating or updating database tables 
+2025-09-19 09:15:15,541 6768 INFO ? odoo.modules.loading: loading event_crm/security/event_crm_security.xml 
+2025-09-19 09:15:15,566 6768 INFO ? odoo.modules.loading: loading event_crm/security/ir.model.access.csv 
+2025-09-19 09:15:15,580 6768 INFO ? odoo.modules.loading: loading event_crm/data/crm_lead_merge_template.xml 
+2025-09-19 09:15:15,612 6768 INFO ? odoo.modules.loading: loading event_crm/views/crm_lead_views.xml 
+2025-09-19 09:15:15,709 6768 INFO ? odoo.modules.loading: loading event_crm/views/event_registration_views.xml 
+2025-09-19 09:15:15,757 6768 INFO ? odoo.modules.loading: loading event_crm/views/event_lead_rule_views.xml 
+2025-09-19 09:15:15,846 6768 INFO ? odoo.modules.loading: loading event_crm/views/event_event_views.xml 
+2025-09-19 09:15:15,991 6768 INFO ? odoo.modules.loading: Module event_crm loaded in 1.44s, 300 queries (+300 other) 
+2025-09-19 09:15:16,017 6768 INFO ? odoo.modules.loading: Loading module iap_crm (102/177) 
+2025-09-19 09:15:16,932 6768 INFO ? odoo.modules.registry: module iap_crm: creating or updating database tables 
+2025-09-19 09:15:17,116 6768 INFO ? odoo.modules.loading: Module iap_crm loaded in 1.10s, 68 queries (+68 other) 
+2025-09-19 09:15:17,493 6768 INFO ? odoo.modules.loading: Loading module website_crm (118/177) 
+2025-09-19 09:15:18,032 6768 INFO ? odoo.modules.registry: module website_crm: creating or updating database tables 
+2025-09-19 09:15:18,091 6768 INFO ? odoo.modules.loading: loading website_crm/security/ir.model.access.csv 
+2025-09-19 09:15:18,132 6768 INFO ? odoo.modules.loading: loading website_crm/data/crm_lead_merge_template.xml 
+2025-09-19 09:15:18,257 6768 INFO ? odoo.modules.loading: loading website_crm/data/ir_actions_data.xml 
+2025-09-19 09:15:18,264 6768 INFO ? odoo.modules.loading: loading website_crm/data/ir_model_data.xml 
+2025-09-19 09:15:18,273 6768 INFO ? odoo.modules.loading: loading website_crm/views/crm_lead_views.xml 
+2025-09-19 09:15:18,306 6768 INFO ? odoo.modules.loading: loading website_crm/views/website_visitor_views.xml 
+2025-09-19 09:15:18,375 6768 INFO ? odoo.modules.loading: loading website_crm/views/website_templates_contactus.xml 
+2025-09-19 09:15:18,418 6768 INFO ? odoo.modules.loading: Module website_crm loaded in 0.92s, 258 queries (+258 other) 
+2025-09-19 09:15:18,435 6768 INFO ? odoo.modules.loading: Loading module crm_iap_enrich (124/177) 
+2025-09-19 09:15:18,738 6768 INFO ? odoo.modules.registry: module crm_iap_enrich: creating or updating database tables 
+2025-09-19 09:15:18,806 6768 INFO ? odoo.modules.loading: loading crm_iap_enrich/data/ir_cron.xml 
+2025-09-19 09:15:18,858 6768 INFO ? odoo.modules.loading: loading crm_iap_enrich/data/ir_action.xml 
+2025-09-19 09:15:18,864 6768 INFO ? odoo.modules.loading: loading crm_iap_enrich/data/mail_templates.xml 
+2025-09-19 09:15:18,869 6768 INFO ? odoo.modules.loading: loading crm_iap_enrich/views/crm_lead_views.xml 
+2025-09-19 09:15:18,900 6768 INFO ? odoo.modules.loading: loading crm_iap_enrich/views/res_config_settings_view.xml 
+2025-09-19 09:15:18,991 6768 INFO ? odoo.modules.loading: Module crm_iap_enrich loaded in 0.56s, 205 queries (+205 other) 
+2025-09-19 09:15:18,992 6768 INFO ? odoo.modules.loading: Loading module crm_iap_mine (125/177) 
+2025-09-19 09:15:19,416 6768 INFO ? odoo.modules.registry: module crm_iap_mine: creating or updating database tables 
+2025-09-19 09:15:19,507 6768 INFO ? odoo.modules.loading: loading crm_iap_mine/data/crm.iap.lead.industry.csv 
+2025-09-19 09:15:19,552 6768 INFO ? odoo.modules.loading: loading crm_iap_mine/data/crm.iap.lead.role.csv 
+2025-09-19 09:15:19,568 6768 INFO ? odoo.modules.loading: loading crm_iap_mine/data/crm.iap.lead.seniority.csv 
+2025-09-19 09:15:19,576 6768 INFO ? odoo.modules.loading: loading crm_iap_mine/data/mail_template_data.xml 
+2025-09-19 09:15:19,582 6768 INFO ? odoo.modules.loading: loading crm_iap_mine/data/ir_sequence_data.xml 
+2025-09-19 09:15:19,585 6768 INFO ? odoo.modules.loading: loading crm_iap_mine/security/ir.model.access.csv 
+2025-09-19 09:15:19,596 6768 INFO ? odoo.modules.loading: loading crm_iap_mine/views/crm_lead_views.xml 
+2025-09-19 09:15:19,671 6768 INFO ? odoo.modules.loading: loading crm_iap_mine/views/crm_iap_lead_mining_request_views.xml 
+2025-09-19 09:15:19,710 6768 INFO ? odoo.modules.loading: loading crm_iap_mine/views/res_config_settings_views.xml 
+2025-09-19 09:15:19,773 6768 INFO ? odoo.modules.loading: loading crm_iap_mine/views/mail_templates.xml 
+2025-09-19 09:15:19,788 6768 INFO ? odoo.modules.loading: loading crm_iap_mine/views/crm_menus.xml 
+2025-09-19 09:15:19,822 6768 INFO ? odoo.modules.loading: Module crm_iap_mine loaded in 0.83s, 419 queries (+419 other) 
+2025-09-19 09:15:19,822 6768 INFO ? odoo.modules.loading: Loading module crm_phonecall_summary_predefined (126/177) 
+2025-09-19 09:15:20,125 6768 INFO ? odoo.modules.registry: module crm_phonecall_summary_predefined: creating or updating database tables 
+2025-09-19 09:15:20,164 6768 INFO ? odoo.schema: Table 'crm_phonecall2phonecall': unable to set NOT NULL on column 'summary_id' 
+2025-09-19 09:15:20,221 6768 INFO ? odoo.modules.loading: loading crm_phonecall_summary_predefined/security/ir.model.access.csv 
+2025-09-19 09:15:20,233 6768 INFO ? odoo.modules.loading: loading crm_phonecall_summary_predefined/views/crm_phonecall_summary_view.xml 
+2025-09-19 09:15:20,276 6768 INFO ? odoo.modules.loading: loading crm_phonecall_summary_predefined/views/crm_phonecall_view.xml 
+2025-09-19 09:15:20,320 6768 INFO ? odoo.modules.loading: loading crm_phonecall_summary_predefined/wizard/crm_phonecall_to_phonecall_view.xml 
+2025-09-19 09:15:20,356 6768 INFO ? odoo.modules.loading: Module crm_phonecall_summary_predefined loaded in 0.53s, 192 queries (+192 other) 
+2025-09-19 09:15:20,664 6768 INFO ? odoo.modules.loading: Loading module website_crm_iap_reveal (154/177) 
+2025-09-19 09:15:20,996 6768 INFO ? odoo.modules.registry: module website_crm_iap_reveal: creating or updating database tables 
+2025-09-19 09:15:21,050 6768 INFO ? odoo.modules.loading: loading website_crm_iap_reveal/data/ir_cron_data.xml 
+2025-09-19 09:15:21,053 6768 INFO ? odoo.modules.loading: loading website_crm_iap_reveal/data/ir_model_data.xml 
+2025-09-19 09:15:21,055 6768 INFO ? odoo.modules.loading: loading website_crm_iap_reveal/security/ir_rules.xml 
+2025-09-19 09:15:21,059 6768 INFO ? odoo.modules.loading: loading website_crm_iap_reveal/security/ir.model.access.csv 
+2025-09-19 09:15:21,102 6768 INFO ? odoo.modules.loading: loading website_crm_iap_reveal/views/crm_lead_views.xml 
+2025-09-19 09:15:21,216 6768 INFO ? odoo.modules.loading: loading website_crm_iap_reveal/views/crm_reveal_views.xml 
+2025-09-19 09:15:21,268 6768 INFO ? odoo.modules.loading: loading website_crm_iap_reveal/views/res_config_settings_views.xml 
+2025-09-19 09:15:21,335 6768 INFO ? odoo.modules.loading: loading website_crm_iap_reveal/views/crm_menus.xml 
+2025-09-19 09:15:21,370 6768 INFO ? odoo.modules.loading: Module website_crm_iap_reveal loaded in 0.71s, 403 queries (+403 other) 
+2025-09-19 09:15:21,933 6768 INFO ? odoo.modules.loading: 177 modules loaded in 38.35s, 5675 queries (+5675 extra) 
+2025-09-19 09:15:22,132 6768 WARNING ? odoo.schema: Table 'crm_phonecall2phonecall': unable to set NOT NULL on column 'summary_id' 
+2025-09-19 09:15:22,550 6768 INFO ? odoo.modules.registry: verifying fields for every extended model 
+2025-09-19 09:15:22,776 6768 INFO ? odoo.modules.loading: Modules loaded. 
+2025-09-19 09:15:22,781 6768 INFO ? odoo.modules.registry: Registry loaded in 42.081s 
+2025-09-19 09:15:22,784 6768 INFO odoo2 odoo.addons.base.models.ir_http: Generating routing map for key 1 
+2025-09-19 09:15:24,320 6768 WARNING odoo2 py.warnings: <unknown>:45: DeprecationWarning: invalid escape sequence '\s'
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\threading.py", line 973, in _bootstrap
+    self._bootstrap_inner()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\threading.py", line 953, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "E:\odoo_17\odoo\service\server.py", line 127, in __init__
+    super().__init__(*args, **kwargs)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\socketserver.py", line 747, in __init__
+    self.handle()
+  File "E:\odoo_17\venv\lib\site-packages\werkzeug\serving.py", line 342, in handle
+    BaseHTTPRequestHandler.handle(self)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\http\server.py", line 433, in handle
+    self.handle_one_request()
+  File "E:\odoo_17\venv\lib\site-packages\werkzeug\serving.py", line 374, in handle_one_request
+    self.run_wsgi()
+  File "E:\odoo_17\venv\lib\site-packages\werkzeug\serving.py", line 319, in run_wsgi
+    execute(self.server.app)
+  File "E:\odoo_17\venv\lib\site-packages\werkzeug\serving.py", line 308, in execute
+    application_iter = app(environ, start_response)
+  File "E:\odoo_17\odoo\http.py", line 2375, in __call__
+    response = request._serve_db()
+  File "E:\odoo_17\odoo\http.py", line 1950, in _serve_db
+    return service_model.retrying(self._serve_ir_http, self.env)
+  File "E:\odoo_17\odoo\service\model.py", line 152, in retrying
+    result = func()
+  File "E:\odoo_17\odoo\http.py", line 1978, in _serve_ir_http
+    response = self.dispatcher.dispatch(rule.endpoint, args)
+  File "E:\odoo_17\odoo\http.py", line 2095, in dispatch
+    return self.request.registry['ir.http']._dispatch(endpoint)
+  File "e:\odoo_17\addons\website\models\ir_http.py", line 235, in _dispatch
+    response = super()._dispatch(endpoint)
+  File "E:\odoo_17\odoo\addons\base\models\ir_http.py", line 223, in _dispatch
+    result.flatten()
+  File "E:\odoo_17\odoo\tools\facade.py", line 83, in wrap_func
+    func(self._wrapped__, *args, **kwargs)
+  File "E:\odoo_17\odoo\http.py", line 1360, in flatten
+    self.response.append(self.render())
+  File "E:\odoo_17\odoo\http.py", line 1352, in render
+    return request.env["ir.ui.view"]._render_template(self.template, self.qcontext)
+  File "e:\odoo_17\addons\website\models\ir_ui_view.py", line 446, in _render_template
+    return super()._render_template(template, values=values)
+  File "E:\odoo_17\odoo\addons\base\models\ir_ui_view.py", line 2061, in _render_template
+    return self.env['ir.qweb']._render(template, values)
+  File "E:\odoo_17\odoo\tools\profiler.py", line 301, in _tracked_method_render
+    return method_render(self, template, values, **options)
+  File "E:\odoo_17\odoo\addons\base\models\ir_qweb.py", line 605, in _render
+    result = ''.join(rendering)
+  File "<190>", line 152, in template_190
+  File "<190>", line 134, in template_190_content
+  File "<190>", line 103, in template_190_t_call_0
+  File "<190>", line 55, in template_190_t_set_2
+  File "E:\odoo_17\odoo\addons\base\models\ir_qweb.py", line 2477, in _get_asset_nodes
+    links = self._get_asset_links(bundle, css=css, js=js, debug=debug)
+  File "E:\odoo_17\odoo\addons\base\models\ir_qweb.py", line 2492, in _get_asset_links
+    return self._generate_asset_links_cache(bundle, css=css, js=js, assets_params=assets_params, rtl=rtl)
+  File "<decorator-gen-71>", line 2, in _generate_asset_links_cache
+  File "E:\odoo_17\odoo\tools\cache.py", line 104, in lookup
+    value = d[key] = self.method(*args, **kwargs)
+  File "E:\odoo_17\odoo\addons\base\models\ir_qweb.py", line 2546, in _generate_asset_links_cache
+    return self._generate_asset_links(bundle, css, js, False, assets_params, rtl)
+  File "E:\odoo_17\odoo\addons\base\models\ir_qweb.py", line 2622, in _generate_asset_links
+    asset_bundle = self._get_asset_bundle(bundle, css=css, js=js, debug_assets=debug_assets, rtl=rtl, assets_params=assets_params)
+  File "E:\odoo_17\odoo\addons\base\models\ir_qweb.py", line 2569, in _get_asset_bundle
+    files, external_assets = self._get_asset_content(bundle_name, assets_params)
+  File "E:\odoo_17\odoo\addons\base\models\ir_qweb.py", line 2551, in _get_asset_content
+    asset_paths = self.env['ir.asset']._get_asset_paths(bundle=bundle, assets_params=assets_params)
+  File "<decorator-gen-53>", line 2, in _get_asset_paths
+  File "E:\odoo_17\odoo\tools\cache.py", line 104, in lookup
+    value = d[key] = self.method(*args, **kwargs)
+  File "E:\odoo_17\odoo\addons\base\models\ir_asset.py", line 153, in _get_asset_paths
+    addons = self._topological_sort(tuple(addons))
+  File "<decorator-gen-54>", line 2, in _topological_sort
+  File "E:\odoo_17\odoo\tools\cache.py", line 104, in lookup
+    value = d[key] = self.method(*args, **kwargs)
+  File "E:\odoo_17\odoo\addons\base\models\ir_asset.py", line 299, in _topological_sort
+    manifs = sorted(manifs, key=sort_key)
+  File "E:\odoo_17\odoo\addons\base\models\ir_asset.py", line 288, in mapper
+    manif = odoo.modules.module._get_manifest_cached(addon)
+  File "E:\odoo_17\odoo\modules\module.py", line 373, in _get_manifest_cached
+    return load_manifest(module, mod_path)
+  File "E:\odoo_17\odoo\modules\module.py", line 319, in load_manifest
+    manifest.update(ast.literal_eval(f.read()))
+  File "E:\odoo_17\odoo\tools\_monkeypatches.py", line 88, in literal_eval
+    return orig_literal_eval(expr)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\ast.py", line 64, in literal_eval
+    node_or_string = parse(node_or_string.lstrip(" \t"), mode='eval')
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\ast.py", line 50, in parse
+    return compile(source, filename, mode, flags,
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\warnings.py", line 109, in _showwarnmsg
+    sw(msg.message, msg.category, msg.filename, msg.lineno,
+  File "E:\odoo_17\odoo\netsvc.py", line 321, in showwarning_with_traceback
+    for frame in traceback.extract_stack():
+ 
+2025-09-19 09:15:24,431 6768 WARNING odoo2 odoo.modules.module: Missing `license` key in manifest for 'crm_lead_geolocation', defaulting to LGPL-3 
+2025-09-19 09:15:25,048 6768 INFO odoo2 odoo.modules.registry: Caches invalidated, signaling through the database: ['default', 'templates'] 
+2025-09-19 09:15:25,102 6768 INFO odoo2 werkzeug: 127.0.0.1 - - [19/Sep/2025 09:15:25] "GET /web HTTP/1.1" 200 - 6640 6.932 37.486
+2025-09-19 09:15:28,193 6768 WARNING ? odoo.modules.module: Missing `license` key in manifest for 'leaflet_map', defaulting to LGPL-3 
+2025-09-19 09:15:28,194 6768 WARNING ? odoo.modules.module: Missing `license` key in manifest for 'leaflet_map', defaulting to LGPL-3 
+2025-09-19 09:15:28,195 6768 WARNING ? odoo.modules.module: Missing `license` key in manifest for 'leaflet_map', defaulting to LGPL-3 
+2025-09-19 09:15:28,199 6768 WARNING ? odoo.modules.module: Missing `license` key in manifest for 'leaflet_map', defaulting to LGPL-3 
+2025-09-19 09:15:33,705 6768 INFO odoo2 odoo.addons.base.models.ir_cron: Starting job `Base: Auto-vacuum internal data`. 
+2025-09-19 09:15:34,675 6768 INFO odoo2 odoo.addons.base.models.ir_cron: Starting job `CRM: enrich leads (IAP)`. 
+2025-09-19 09:15:34,707 6768 INFO odoo2 odoo.addons.base.models.ir_cron: Job done: `CRM: enrich leads (IAP)` (0.031s). 
+2025-09-19 09:15:34,739 6768 INFO odoo2 odoo.addons.base.models.ir_cron: Starting job `Event: Mail Scheduler`. 
+2025-09-19 09:15:34,798 6768 INFO odoo2 odoo.addons.base.models.ir_cron: Job done: `Event: Mail Scheduler` (0.059s). 
+2025-09-19 09:15:34,820 6768 INFO odoo2 odoo.addons.base.models.ir_cron: Starting job `Calendar: Event Reminder`. 
+2025-09-19 09:15:34,852 6768 INFO odoo2 odoo.addons.base.models.ir_cron: Job done: `Calendar: Event Reminder` (0.032s). 
+2025-09-19 09:15:34,885 6768 INFO odoo2 odoo.addons.base.models.ir_cron: Starting job `SMS: SMS Queue Manager`. 
+2025-09-19 09:15:34,908 6768 INFO odoo2 odoo.addons.base.models.ir_cron: Job done: `SMS: SMS Queue Manager` (0.023s). 
+2025-09-19 09:15:34,924 6768 INFO odoo2 odoo.addons.base.models.ir_cron: Starting job `Snailmail: process letters queue`. 
+2025-09-19 09:15:34,956 6768 INFO odoo2 odoo.addons.base.models.ir_cron: Job done: `Snailmail: process letters queue` (0.016s). 
+2025-09-19 09:15:34,972 6768 INFO odoo2 odoo.addons.base.models.ir_cron: Starting job `Partner Autocomplete: Sync with remote DB`. 
+2025-09-19 09:15:34,996 6768 INFO odoo2 odoo.addons.base.models.ir_cron: Job done: `Partner Autocomplete: Sync with remote DB` (0.024s). 
+2025-09-19 09:15:35,021 6768 INFO odoo2 odoo.addons.base.models.ir_cron: Starting job `Notification: Send scheduled message notifications`. 
+2025-09-19 09:15:35,036 6768 INFO odoo2 odoo.addons.base.models.ir_cron: Job done: `Notification: Send scheduled message notifications` (0.016s). 
+2025-09-19 09:15:35,069 6768 INFO odoo2 odoo.addons.base.models.ir_cron: Starting job `Mail: Email Queue Manager`. 
+2025-09-19 09:15:35,101 6768 INFO odoo2 odoo.addons.base.models.ir_cron: Job done: `Mail: Email Queue Manager` (0.032s). 
+2025-09-19 09:15:35,119 6768 INFO odoo2 odoo.addons.base.models.ir_cron: Starting job `Account: Post draft entries with auto_post enabled and accounting date up to today`. 
+2025-09-19 09:15:35,214 6768 INFO odoo2 odoo.addons.base.models.ir_cron: Job done: `Account: Post draft entries with auto_post enabled and accounting date up to today` (0.095s). 
+2025-09-19 09:15:35,221 6768 INFO odoo2 odoo.addons.base.models.ir_cron: Starting job `Digest Emails`. 
+2025-09-19 09:15:35,554 6768 INFO odoo2 odoo.addons.base.models.ir_attachment: filestore gc 5 checked, 0 removed 
+2025-09-19 09:15:36,877 6768 INFO odoo2 odoo.addons.base.models.ir_cron: Job done: `Digest Emails` (1.656s). 
+2025-09-19 09:15:36,909 6768 INFO odoo2 odoo.addons.base.models.ir_cron: Starting job `Website Visitor : clean inactive visitors`. 
+2025-09-19 09:15:36,958 6768 INFO odoo2 odoo.addons.base.models.ir_cron: Job done: `Website Visitor : clean inactive visitors` (0.049s). 
+2025-09-19 09:15:36,973 6768 INFO odoo2 odoo.addons.base.models.ir_cron: Starting job `HR Employee: check work permit validity`. 
+2025-09-19 09:15:36,989 6768 INFO odoo2 odoo.addons.base.models.ir_cron: Job done: `HR Employee: check work permit validity` (0.016s). 
+2025-09-19 09:15:37,030 6768 INFO odoo2 odoo.addons.base.models.ir_cron: Starting job `Gamification: Goal Challenge Check`. 
+2025-09-19 09:15:37,758 6768 INFO odoo2 werkzeug: 127.0.0.1 - - [19/Sep/2025 09:15:37] "GET /web?debug=1 HTTP/1.1" 200 - 17 0.139 0.090
+2025-09-19 09:15:38,133 6768 INFO odoo2 odoo.addons.base.models.res_users: GC'd 0 user log entries 
+2025-09-19 09:15:38,263 6768 INFO odoo2 odoo.models.unlink: User #1 deleted base.module.update records with IDs: [108, 109, 105, 106, 107] 
+2025-09-19 09:15:38,384 6768 INFO odoo2 odoo.addons.auth_totp.models.auth_totp: GC'd 0 totp devices entries 
+2025-09-19 09:15:38,480 6768 INFO odoo2 odoo.models.unlink: User #1 deleted bus.bus records with IDs: [385, 386, 387, 388, 389, 390, 391, 392, 393, 394, 395, 396, 397, 398, 399, 400, 401, 402, 403] 
+2025-09-19 09:15:38,553 6768 INFO odoo2 odoo.models.unlink: User #1 deleted bus.presence records with IDs: [7] 
+2025-09-19 09:15:39,238 6768 INFO odoo2 odoo.addons.base.models.ir_cron: Job done: `Gamification: Goal Challenge Check` (2.208s). 
+2025-09-19 09:15:39,332 6768 INFO odoo2 odoo.addons.base.models.ir_cron: Starting job `Product: send email regarding products availability`. 
+2025-09-19 09:15:39,410 6768 INFO odoo2 odoo.addons.base.models.ir_cron: Job done: `Product: send email regarding products availability` (0.077s). 
+2025-09-19 09:15:39,451 6768 INFO odoo2 odoo.addons.sms.models.sms_sms: GC'd 0 sms marked for deletion 
+2025-09-19 09:15:39,477 6768 INFO odoo2 odoo.addons.base.models.ir_cron: Starting job `eCommerce: send email to customers about their abandoned cart`. 
+2025-09-19 09:15:39,511 6768 INFO odoo2 odoo.addons.base.models.ir_cron: Job done: `eCommerce: send email to customers about their abandoned cart` (0.016s). 
+2025-09-19 09:15:39,984 6768 INFO odoo2 odoo.models.unlink: User #1 deleted crm.lead2opportunity.partner records with IDs: [4] 
+2025-09-19 09:15:40,659 6768 INFO odoo2 odoo.models.unlink: User #1 deleted crm.phonecall2phonecall records with IDs: [1] 
+2025-09-19 09:15:41,114 6768 INFO odoo2 odoo.addons.base.models.ir_cron: Job done: `Base: Auto-vacuum internal data` (7.409s). 
+2025-09-19 09:15:42,942 6768 INFO odoo2 werkzeug: 127.0.0.1 - - [19/Sep/2025 09:15:42] "GET / HTTP/1.1" 200 - 182 0.380 9.596
+2025-09-19 09:15:46,759 6768 INFO odoo2 werkzeug: 127.0.0.1 - - [19/Sep/2025 09:15:46] "GET /web/assets/1/484a7f9/web.assets_web.min.js HTTP/1.1" 200 - 5 0.006 21.616
+2025-09-19 09:15:46,761 6768 INFO odoo2 werkzeug: 127.0.0.1 - - [19/Sep/2025 09:15:46] "GET /web/webclient/load_menus/980cc17a474018b6ef41f21046c61fddb0ea9b1d8e9e38f18a5ba97c5b210798 HTTP/1.1" 200 - 4 0.009 21.267
+2025-09-19 09:15:46,771 6768 INFO odoo2 werkzeug: 127.0.0.1 - - [19/Sep/2025 09:15:46] "GET /web/webclient/translations/a7a560cf1f7dc9303a1b655fe73e6501ef746c50?lang=en_US HTTP/1.1" 200 - 3 0.009 21.277
+2025-09-19 09:15:46,791 6768 INFO odoo2 werkzeug: 127.0.0.1 - - [19/Sep/2025 09:15:46] "GET /web/assets/1/484a7f9/web.assets_web.min.js HTTP/1.1" 200 - 5 0.015 8.587
+2025-09-19 09:15:46,799 6768 INFO odoo2 werkzeug: 127.0.0.1 - - [19/Sep/2025 09:15:46] "GET /web/assets/1/cf2a716/web.assets_web.min.css HTTP/1.1" 200 - 5 0.009 21.654
+2025-09-19 09:15:46,820 6768 INFO odoo2 werkzeug: 127.0.0.1 - - [19/Sep/2025 09:15:46] "GET /web/webclient/translations/a7a560cf1f7dc9303a1b655fe73e6501ef746c50?lang=en_US HTTP/1.1" 200 - 3 0.006 8.593
+2025-09-19 09:15:46,827 6768 INFO odoo2 werkzeug: 127.0.0.1 - - [19/Sep/2025 09:15:46] "GET /web/assets/1/cf2a716/web.assets_web.min.css HTTP/1.1" 200 - 5 0.006 8.646
+2025-09-19 09:15:46,828 6768 INFO odoo2 werkzeug: 127.0.0.1 - - [19/Sep/2025 09:15:46] "GET /web/webclient/load_menus/980cc17a474018b6ef41f21046c61fddb0ea9b1d8e9e38f18a5ba97c5b210798 HTTP/1.1" 200 - 3 0.007 8.632
+2025-09-19 09:15:48,519 6768 INFO odoo2 werkzeug: 127.0.0.1 - - [19/Sep/2025 09:15:48] "GET /hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__76a6d1a9_afd1_4e72_ab80_0a733aa3fd0f__0 HTTP/1.1" 404 - 49 0.050 0.149
+2025-09-19 09:15:48,747 6768 INFO odoo2 werkzeug: 127.0.0.1 - - [19/Sep/2025 09:15:48] "GET /hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__ce734910_57a9_4a89_8d8d_aa0b5c282e1b__1 HTTP/1.1" 404 - 37 0.022 0.038
+2025-09-19 09:15:48,817 6768 INFO odoo2 werkzeug: 127.0.0.1 - - [19/Sep/2025 09:15:48] "GET /hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__97dcc2fb_0686_4522_8465_73f24e3319b2__2 HTTP/1.1" 404 - 37 0.026 0.041
+2025-09-19 09:15:49,236 6768 INFO odoo2 werkzeug: 127.0.0.1 - - [19/Sep/2025 09:15:49] "GET /hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__d23ccdb4_2e07_4eab_ba12_74956506f8e7__3 HTTP/1.1" 404 - 37 0.014 0.043
+2025-09-19 09:15:49,305 6768 INFO odoo2 werkzeug: 127.0.0.1 - - [19/Sep/2025 09:15:49] "GET /hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__283b1518_4ef2_4409_bcd1_d26390e6a55a__4 HTTP/1.1" 404 - 37 0.026 0.050
+2025-09-19 09:15:49,442 6768 INFO odoo2 werkzeug: 127.0.0.1 - - [19/Sep/2025 09:15:49] "GET /hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__dbe54b1a_23e5_4813_9374_dcdd3f9fe159__5 HTTP/1.1" 404 - 37 0.102 0.048
+2025-09-19 09:15:53,081 6768 INFO ? werkzeug: 127.0.0.1 - - [19/Sep/2025 09:15:53] "GET /web/static/src/libs/fontawesome/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 - 0 0.000 0.004
+2025-09-19 09:15:53,408 6768 INFO ? werkzeug: 127.0.0.1 - - [19/Sep/2025 09:15:53] "GET /website/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.019
+2025-09-19 09:15:53,435 6768 INFO odoo2 werkzeug: 127.0.0.1 - - [19/Sep/2025 09:15:53] "GET /web/assets/1/5be196c/web.assets_frontend.min.css HTTP/1.1" 200 - 5 0.013 0.037
+2025-09-19 09:15:53,486 6768 INFO odoo2 werkzeug: 127.0.0.1 - - [19/Sep/2025 09:15:53] "GET /web_editor/shape/http_routing/404.svg?c2=o-color-2 HTTP/1.1" 200 - 17 0.040 0.056
+2025-09-19 09:15:53,952 6768 INFO odoo2 werkzeug: 127.0.0.1 - - [19/Sep/2025 09:15:53] "POST /mail/init_messaging HTTP/1.1" 200 - 25 0.035 0.014
+2025-09-19 09:15:53,982 6768 INFO odoo2 werkzeug: 127.0.0.1 - - [19/Sep/2025 09:15:53] "POST /web/dataset/call_kw/res.users/systray_get_activities HTTP/1.1" 200 - 11 0.015 0.015
+2025-09-19 09:15:54,010 6768 INFO odoo2 werkzeug: 127.0.0.1 - - [19/Sep/2025 09:15:54] "GET /bus/websocket_worker_bundle?v=17.0-1 HTTP/1.1" 200 - 9 0.006 0.021
+2025-09-19 09:15:54,124 6768 INFO odoo2 werkzeug: 127.0.0.1 - - [19/Sep/2025 09:15:54] "POST /mail/load_message_failures HTTP/1.1" 200 - 17 0.023 0.030
+2025-09-19 09:15:54,186 6768 INFO odoo2 werkzeug: 127.0.0.1 - - [19/Sep/2025 09:15:54] "GET /web/service-worker.js HTTP/1.1" 200 - 2 0.002 0.014
+2025-09-19 09:15:54,387 6768 INFO odoo2 werkzeug: 127.0.0.1 - - [19/Sep/2025 09:15:54] "GET /web/offline HTTP/1.1" 200 - 6 0.009 0.030
+2025-09-19 09:15:54,411 6768 INFO odoo2 werkzeug: 127.0.0.1 - - [19/Sep/2025 09:15:54] "GET /websocket?version=17.0-1 HTTP/1.1" 101 - 2 0.003 0.020
+2025-09-19 09:15:54,743 6768 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres 
+2025-09-19 09:15:57,835 6768 INFO odoo2 werkzeug: 127.0.0.1 - - [19/Sep/2025 09:15:57] "GET /web/manifest.webmanifest HTTP/1.1" 200 - 9 0.012 0.016
+2025-09-19 09:15:58,126 6768 INFO ? werkzeug: 127.0.0.1 - - [19/Sep/2025 09:15:58] "GET /web/static/img/favicon.ico HTTP/1.1" 200 - 0 0.000 0.004
+2025-09-19 09:15:58,165 6768 INFO ? werkzeug: 127.0.0.1 - - [19/Sep/2025 09:15:58] "GET /web/static/img/odoo-icon-192x192.png HTTP/1.1" 200 - 0 0.000 0.011
